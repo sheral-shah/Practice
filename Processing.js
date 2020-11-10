@@ -64,7 +64,7 @@ ellipse(100,50,10,10)
 
 strokeWeight(<weight>) //thickness of shape borders
 strokeCap(SQUARE)  //For the edges. they can be SQUARE, ROUND OR PROJECT (meaning extended). Default is round
-nostroke()
+noStroke()
 
 //A DESIGN OF CONCENTRIC RECTANGLES
 size(200,200);
@@ -162,5 +162,125 @@ y = y + distance+h
 rect(10,y,w,h)
 //
 
+////////////////TYPES OF DATA/////////////////////////
+//INT (INTEGER), FLOAT (DECIMAL), BOOLEAN (TRUE, FALSE), CHAR (A, B, C, +, -, ETC.; use single quote for char)
+// CAN COMBINE TYPES TO CREATE COMPOSITES. such as combining characters (char) to make a word. This will be a string variable and should be used with double quotes. Number of integers
+//together such as {1,2,3} is called an array. 
 
-  
+//A DESIGN
+size(300,300);
+background(250,235,2000);
+int h=40;
+int w=40;
+int wgt=3
+strokeWeight (wgt);
+
+fill(255,100,0)
+ellipse(150,150,h-10,w-10);
+fill (255,0,100);
+ellipse(130,120,h,w);
+ellipse(170,120,h,w);
+ellipse(185,158,h,w);
+ellipse(152,185,h,w);
+ellipse(115,158,h,w);
+
+fill(0);
+strokeWeight(wgt);
+strokeCap(ROUND)
+line (150,206,150,300)
+
+
+noStroke ();
+fill(0,150,0);
+int x = 30;
+int p=10;
+int w = 8;
+int y = 4;
+
+triangle(p,height,p+y,height-x,p+w,height);
+triangle(p+w,height,p+y*3,height-x*2,p+w*2,height);
+triangle(p+w*2,height,p+y*5,height-x,p+w*3,height);
+triangle(p+w*3,height,p+y*7,height-x*2,p+w*4,height);
+triangle(p+w*4,height,p+y*9,height-x,p+w*5,height);
+triangle(p+w*5,height,p+y*11,height-x*2,p+w*6,height);
+triangle(p+w*6,height,p+y*13,height-x,p+w*7,height);
+triangle(p+w*7,height,p+y*15,height-x*2,p+w*8,height);
+triangle(p+w*8,height,p+y*17,height-x,p+w*9,height);
+triangle(p+w*9,height,p+y*19,height-x*2,p+w*10,height);
+triangle(p+w*10,height,p+y*21,height-x,p+w*11,height);
+triangle(p+w*11,height,p+y*23,height-x*2,p+w*12,height);
+triangle(p+w*12,height,p+y*25,height-x,p+w*13,height);
+triangle(p+w*13,height,p+y*27,height-x*2,p+w*14,height);
+triangle(p+w*14,height,p+y*29,height-x,p+w*15,height);
+triangle(p+w*15,height,p+y*31,height-x*2,p+w*16,height);
+triangle(p+w*16,height,p+y*33,height-x,p+w*17,height);
+triangle(p+w*17,height,p+y*35,height-x*2,p+w*18,height);
+triangle(p+w*18,height,p+y*37,height-x,p+w*19,height);
+triangle(p+w*19,height,p+y*39,height-x*2,p+w*20,height);
+triangle(p+w*20,height,p+y*41,height-x,p+w*21,height);
+triangle(p+w*21,height,p+y*43,height-x*2,p+w*22,height);
+triangle(p+w*22,height,p+y*45,height-x,p+w*23,height);
+triangle(p+w*23,height,p+y*47,height-x*2,p+w*24,height);
+triangle(p+w*24,height,p+y*49,height-x,p+w*25,height);
+triangle(p+w*25,height,p+y*51,height-x*2,p+w*26,height);
+triangle(p+w*26,height,p+y*53,height-x,p+w*27,height);
+triangle(p+w*27,height,p+y*55,height-x*2,p+w*28,height);
+triangle(p+w*28,height,p+y*57,height-x,p+w*29,height);
+triangle(p+w*29,height,p+y*59,height-x*2,p+w*30,height);
+triangle(p+w*30,height,p+y*61,height-x,p+w*31,height);
+triangle(p+w*31,height,p+y*63,height-x*2,p+w*32,height);
+triangle(p+w*32,height,p+y*65,height-x,p+w*33,height);
+triangle(p+w*33,height,p+y*67,height-x*2,p+w*34,height);
+triangle(p+w*34,height,p+y*69,height-x,p+w*35,height);
+triangle(p+w*35,height,p+y*71,height-x*2,p+w*36,height);
+
+fill(250,235,10);
+arc(0,0,120,120,0,HALF_PI);
+//
+
+//GRAPH EXTENDED
+size(200,150);
+background(150,40,40);
+int h = 10;
+int w = 10;
+int y = 20;
+int distance = 10;
+int c=80;
+fill(0,c,0);
+
+
+rect(10,y,w,h);
+
+c=c+50;
+w=w*2;
+fill(0,c,0);
+y = y + distance+h;
+rect(10,y,w,h);
+
+c=c+50
+fill(0,c,0);
+w=w*2
+y = y + distance+h
+rect(10,y,w,h)
+
+c=c+50
+fill(0,c,0);
+
+w=w*2
+y = y + distance+h
+rect(10,y,w,h)
+
+c=c+50
+fill(0,c,0);
+
+w=w*2
+y = y + distance+h
+rect(10,y,w,h)
+//
+
+//for loop: 
+//for(<initialisation>;<test>;<update>) {<instructions>;}
+int sum=0;
+for (int nextNumber=1; nextNumber<6;nextNumber++) {
+  sum=sum+nextNumber;
+}
