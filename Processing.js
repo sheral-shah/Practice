@@ -284,3 +284,38 @@ int sum=0;
 for (int nextNumber=1; nextNumber<6;nextNumber++) {
   sum=sum+nextNumber;
 }
+
+//A design
+size(200,200);
+background(255);
+fill(255,0,0);
+
+rect (20,20,50,50);
+
+
+for (int i=80; i<130 ; i=i+10) {
+  line(i,20,i,180);
+}
+
+rect (130,130,50,50);
+//
+
+//Another design
+size(200,200);
+
+for (int i=0; i<200 ; i=i+40) {
+  fill(i);
+  rect(i,0,40,200);
+}
+
+size(200,200);
+
+int x1 = 0;
+w=40; h=200;
+int c=305;
+for (int i=0; i<200; i=i+40) {
+    c=c-50;
+    fill(255,c,85)
+    rect(i,x1,w,h);
+}
+//
