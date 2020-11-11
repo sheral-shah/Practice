@@ -319,3 +319,42 @@ for (int i=0; i<200; i=i+40) {
     rect(i,x1,w,h);
 }
 //
+
+//
+size (200,200);
+
+int h=60;
+int c=255;
+for (int i=0; i<200; i=i+40) {
+    h=h+20;
+    int w=200-h;
+    strokeWeight(3);
+    c=c-40;
+    fill (c,0,c);
+    rect (i,w,40,h)
+}
+//
+
+// A NESTED LOOP
+size(100, 100);
+
+
+for (int y=10; y<100; y=y+10 ) {
+for (int x=10; x<100; x=x+10) {
+    point (x,y);
+}
+}
+//
+
+//  A DESIGN FOR NESTED LOOP
+size(200,200)
+strokeWeight(5);
+int c=255;
+for (int y=20; y<110; y=y+20){
+  for (int x=20; x<110; x=x+20){ 
+  fill(c);
+   ellipse(x,y,20,20);
+   c=c-10;
+  }
+}
+//
