@@ -358,3 +358,85 @@ for (int y=20; y<110; y=y+20){
   }
 }
 //
+
+//THE IF COMMAND
+if (test) {
+  STATEMENTS
+}
+//
+
+//A DESIGN
+size(300,300);
+background(255,255,255);
+int c=255;
+int s=1;
+for (int i=10; i<300; i=i+30) {
+   c=c-40;
+   if (c<0){
+        c=255
+    }
+    
+    s=s+1;
+    strokeWeight (s);
+    stroke (c,0,c);
+    line (i,10,i,280);
+}
+
+int c=255;
+int s=1;
+for (int i=10; i<300; i=i+30) {
+    c=c-40;
+    if (c<0){
+        c=255
+    }
+    s=s+1;
+    strokeWeight (s);
+    stroke (c,0,c);
+    line (10,i,280,i);
+}
+//
+
+// THE ELSE STATEMENT
+if (test) {
+  Statements executed if condition is true
+}
+else {
+  Stements executed if condition is false
+}
+// A  design
+size (300,300);
+
+for (int i=100; i<300; i=i+50){
+    if (i<150) {
+        fill (255,0,255);
+         ellipseMode (CENTER);
+          ellipse(150,i,50,50);
+    }
+    
+   else {
+       fill (255,0,100);
+       ellipseMode (CENTER);
+      ellipse(150,i,50,50);
+   }
+ 
+   
+}
+//
+
+//Design
+size(150, 150);
+int normal = 11;
+if(normal < 10){
+    fill(255);
+}
+else {
+    fill(255, 0, 255);
+}
+ellipse(80, 80, 30, 30);
+ellipse(60, 60, 30, 30);
+fill(0, 0, 255);
+ellipse(80, 60, 30, 30);
+ellipse(60, 80, 30, 30);
+fill(255, 255, 0);
+ellipse(70, 70, 20, 20);
+//
