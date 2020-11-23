@@ -480,3 +480,19 @@ ellipse (100,100,50,50);
 }
 
 //
+size(200,150);
+background(0);
+int x = 10;
+int sumodd = 0;
+
+fill(0,250,0);
+for(int i = 0; i <= x; i++){
+    
+    if(i%2==0){
+        text(i,10+(10*i),10);
+    }else{
+        sumodd+=i;
+    }
+}
+fill(0,255,0)
+text("Sum Odd: "+sumodd,30+(10*x),100)
