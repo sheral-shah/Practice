@@ -440,3 +440,43 @@ ellipse(60, 80, 30, 30);
 fill(255, 255, 0);
 ellipse(70, 70, 20, 20);
 //
+
+// A NEW CONCEPT MODULO
+// %--8%2=0--0 being the remainder; 9%2=1--1 being the remainder
+size (200,200);
+background(255);
+stroke(0,255,0);
+strokeWeight(3);
+
+for (int i=1; i<11, i+=1) {
+  if (i%3==0);
+  stroke (255,0,0);
+}
+else if (i%3==1) {
+  stroke (0,255,0);
+}
+else  {
+  stroke (0,0,255);
+}
+    rect (i*10, i*10,200-(i*20),200-(i*20));
+}
+
+//
+size (200,200);
+background(255);
+int temprature=25;
+
+
+ if (temprature<15) {
+  fill (0,0,255);
+}
+else if (temprature <30) {
+  fill (240,240,50);
+}
+else {
+  fill (255,0,0);
+}
+ellipse (100,100,50,50);
+}
+
+//
