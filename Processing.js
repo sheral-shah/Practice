@@ -496,3 +496,70 @@ for(int i = 0; i <= x; i++){
 }
 fill(0,255,0)
 text("Sum Odd: "+sumodd,30+(10*x),100)
+
+//BOOLEAN / OR "||" Operator, "&&" for and, NOT for false i.e. "!"
+size(200,200);
+int j=10;
+for (int i=1 ; i < 11; i++) {
+    if ((i%2==0)&&(i%3==0)) {
+        fill (0,j,0);
+        
+    }
+    else {
+      fill (100,j*10,200); 
+      j=j+5;
+    }
+        rectMode (CENTER);
+        rect (100, 100, 200-(i*20),200-(i*20));
+        
+    
+} 
+
+//
+size(200,200);
+int j=10;
+for (int i=1 ; i < 11; i++) {
+    if (!(i==5)) { //this means that if i equals 5 then the overall condition is false. Basically if i is 5 do not draw a rectangle
+        rectMode (CENTER);
+        rect (100, 100, 200-(i*20),200-(i*20));
+        
+    }
+} 
+//
+
+//This one is complicated
+size(200,200);
+int j=10;
+noStroke ();
+for (int i=0; i<200; i=i+40) {
+    fill (50,j,50);
+    j=j+10
+    rect (i,0,40,200)
+}
+//
+size (500,500);
+int scale=width/12;
+strokeWeight (3);
+boolean rg=true;
+
+line (scale,scale, scale, height-scale);
+line (scale, height-scale, width-scale, height-scale);
+
+for (int i=0; i<10; i++) {
+    fill (255,0, 0);
+    if (rg) {
+    fill (0,140,150);
+}
+    rect (scale*(i+1), height-scale, scale, -scale*(i+1));
+    
+    if (rg) {
+        fill(255,255,255);
+        textSize(20);
+        text(i, scale*(i+1)+10, height-scale-10);
+    }
+}
+
+//
+
+
+
