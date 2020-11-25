@@ -560,6 +560,23 @@ for (int i=0; i<10; i++) {
 }
 
 //
+size (200,200);
 
+int x=11;
 
+for (int i=0; i<x; i=i+1) {
+    if ((i%2==0) && (i%5==0)) {
+        fill (0,255,0);
+        text (i,i*10,20)
+    }
+else if (i%2==0) {
+    fill (255,0,0)
+    text (i, i*20, 40)
+}
+else {
+    fill (0,0,255)
+    text (i, i*30, 60)
+}
+}
+//
 
