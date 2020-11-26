@@ -32,3 +32,82 @@ for (int x=0; x<200; x=x+10) {
 }
 }
 //
+
+//THE BEGIN SHAPE FUNCTION: beginShape(), endShape ()--can use end(CLOSE) to have a closed shape
+//Even in begin shape bracket can add paramters such as LINE, TRIANGLES, TRIANGLE_STRIP, QUADS, QUAD_STRIP
+//To draw a shape first create vertices through the vertex function : vertex()--in the bracket fille the coordinates
+//AN EXAMPE
+
+
+size (200,200);
+background(140,40,40);
+stroke(0);
+strokeWeight(3);
+fill(255);
+
+beginShape();
+vertex(90,40);
+vertex(70,120);
+vertex(110,120);
+endShape(CLOSE);
+
+//
+size (200,200);
+background(140,40,40);
+stroke(0);
+strokeWeight(3);
+fill(255);
+
+
+beginShape();
+vertex(40,70);
+vertex(40,120);
+vertex (60,125);
+vertex (80,120);
+vertex(80,70);
+fill (0,255,0)
+endShape(CLOSE);
+//
+
+//CAN DRAW CURVES AS WELL
+//https://github.com/processing-js/processing-js, https://github.com/processing-js/processing-js
+size (200,200);
+background(140,40,40);
+stroke(0);
+strokeWeight(3);
+fill(255);
+beginShape();
+curveVertex(500,500); //this is the curveature/control for beggining of the curve
+curveVertex(30,70); //This is the start point
+curveVertex(200,100) //This is the curveature/control for end of the curve
+endShape(CLOSE);
+
+//BEZIER CURVE--Identify to vertices for the start and end and a control vertice that reprsents the curvature
+size (200,200);
+background(140,40,40);
+stroke(0);
+strokeWeight(3);
+fill(255);
+beginShape();
+vertex(40,40); //starting point
+bezierVertex(30,70, 40,70,50,60); ///curvatures and ending point
+endShape(CLOSE);
+
+//The Rotate function ; rotate (angle in radians)
+//Translate(xoffset,yoffset)--so that after rotate we can change frpm where we want to draw
+//Scale up images using scale function: scale ( x scale, y scale); give this in decimals. 1.5 would mean 150 percent
+//
+size (300,300);
+
+rect(85,10,30,45);
+rotate(PI/16);
+translate(65,65);
+rect(85,10,30,45);
+rotate(PI/16);
+rect(85,10,30,45);
+rotate(PI/16);
+rect(85,10,30,45);
+rotate(PI/16);
+rect(85,10,30,45);
+rotate(PI/16);
+//there is another function called textAlign
