@@ -250,5 +250,41 @@ for(int i = 0; i < temps.length; i++){
 }
 endShape();
 /////////////////////////////////////////////////////////
+
+//Already decide the size of an array: int length=5 ; int[] array=new int[length];----cant be changed once set.
+
+//DYNAMIC ARRAYS
+// Array list--
+//ArrayList<> array=new; ArrayList ();--created an empty array list to which elements can be added one at a time
+//array.add (..);
+
+// To create a avriable sized array to hold integers we write : ArrayList<Integer>array=new ArrayList<Integer>();
+//array.add(0,3);--means that in the array list number 3 will be added in the first positon
+//array.add(1,4); means that in the array list number 4 will be added in the second position.
+// array.remove(1); means the number in the second positon i.e. 4 will be deleted from the array list
+//array.get(0); will give us the value which is first in the array list which is 3.
+//text(array.get(0), 100, 100)
+//to change the positions we write array.set(1,3);--so 3 will become second position in place of 4.
+//.. To get the number of elements in the list--array.size(), text(array.size(), 100, 100);
+
+//
+size (500,500);
+
+String[] words={"Here", "we", "have", "a", "simple", 
+       "program", "that", "displays", "the", "number",
+                "of", "times", "the", "word", "data", 
+                "appears", "in", "this", "small", 
+               "part", "of", "this", "video", "new", "newest"};
+               
+ ArrayList<String> unique= new ArrayList<String> ();
   
+  for (int i=0; i<=words.length; i++) {
+  if (!unique.contains(words[i])) {
+  unique.add(words[i]);
+  }
+  }
+ 
+ text(unique.size(), 10,20);
+  }
   
+  //
